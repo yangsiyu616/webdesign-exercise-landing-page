@@ -1,5 +1,5 @@
 :root {
-    --font-primary: "Satoshi", sans-serif;
-    --font-secondary: "Inter", sans-serif;
+    --font-primary: "Switzer Variable", sans-serif;
+    --font-secondary: "Tanker", sans-serif;
     font-feature-settings: "liga" 1, "calt" 1; /*fix for Chrome*/
 }

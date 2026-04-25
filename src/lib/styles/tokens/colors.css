@@ -1,0 +1,68 @@
+:root {
+  --hex-brand-100: #F9FCDE;
+  --hex-brand-200: #F4F9BE;
+  --hex-brand-300: #E5EE9A;
+  --hex-brand-400: #D2DE7C;
+  --hex-brand-500: #B9C953;
+  --hex-brand-600: #9CAC3C;
+  --hex-brand-700: #7F9029;
+  --hex-brand-800: #64741A;
+  --hex-brand-900: #50600F;
+
+--hex-neutral-50: #F9FAFB;
+  --hex-neutral-100: #ECEEF1;
+  --hex-neutral-200: #D0D5DC;
+  --hex-neutral-300: #B5BEC8;
+  --hex-neutral-400: #929FAF;
+  --hex-neutral-500: #6C7E93;
+  --hex-neutral-600: #4F5D6E;
+  --hex-neutral-700: #37414D;
+  --hex-neutral-800: #1F242B;
+  --hex-neutral-900: #030404;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-canvas: var(--hex-neutral-50);
+    --color-surface: var(--hex-neutral-100);
+
+    --color-ink: var(--hex-neutral-900);
+    --color-ink-secondary: var(--hex-neutral-500);
+    --color-ink-inverted: var(--hex-neutral-50);
+
+    --color-link: var(--hex-brand-600);
+
+    --color-filter--hover: var(--hex-brand-100);
+    --color-filter--selected: var(--hex-brand-500);
+
+    /* Figma variables */
+    --color-background-primary: var(--hex-neutral-50);
+    --color-content-primary: var(--hex-neutral-900);
+    --color-content-secondary: var(--hex-neutral-400);
+    --color-filter-background-selected: var(--hex-brand-500);
+    --color-filter-content-selected: var(--hex-neutral-50);
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: var(--hex-neutral-900);
+    --color-surface: var(--hex-neutral-800);
+
+    --color-ink: var(--hex-neutral-50);
+    --color-ink-secondary: var(--hex-neutral-400);
+    --color-ink-inverted: var(--hex-neutral-900);
+
+    --color-link: var(--hex-brand-500);
+
+    --color-filter--hover: var(--hex-brand-800);
+    --color-filter--selected: var(--hex-brand-600);
+
+    /* Figma variables */
+    --color-background-primary: var(--hex-neutral-900);
+    --color-content-primary: var(--hex-neutral-50);
+    --color-content-secondary: var(--hex-neutral-400);
+    --color-filter-background-selected: var(--hex-brand-600);
+    --color-filter-content-selected: var(--hex-neutral-50);
+}
+}

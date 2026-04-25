@@ -3,25 +3,33 @@
 
 import "$lib/styles/reset.css"
 import "$lib/styles/tokens.css"
+import "$lib/styles/tokens/colors.css"
+import "$lib/styles/tokens/sizes.css" 
+import "$lib/styles/base.css"
+import "$lib/styles/utilities.css"
 
-	let { children } = $props();
+import Header from "$lib/components/Header.svelte"
+import Footer from "$lib/components/Footer.svelte"
+
+	const { children } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 
-	<!-- satoshi font -->
-	<link rel="preconnect" href="https://api.fontshare.com/"/>
-	<link rel="preconnect" href="https://api.fontshare.com/" crossorigin>
-	<link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+	<!-- Switzer Variable font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Switzer:wght@100..900&display=swap" rel="stylesheet">
 
-		<!-- inter font -->
-<link rel="preconnect" href="https://fonts.bunny.net/">
-<link rel="preconnect" href="https://fonts.bunny.net/" crossorigin>
-<link href="https://fonts.bunny.net/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+	<!-- Tanker font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tanker&display=swap" rel="stylesheet">
 </svelte:head>
 
+<Header />
+
 {@render children()}
+
+<Footer />
