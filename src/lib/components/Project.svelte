@@ -77,6 +77,47 @@
         transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
+    @media (max-width: 744px) {
+        .card {
+            display: flex;
+            width: min(664px, 100%);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--spacing-2, 8px);
+        }
+
+        .img-container {
+            aspect-ratio: 664 / 400;
+        }
+
+        .text-content {
+            gap: 6px;
+            font-size: 20px;
+        }
+
+        .icon-wrapper {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 402px) {
+        .card {
+            width: 100%;
+        }
+
+        .img-container {
+            aspect-ratio: 1 / 0.75;
+        }
+
+        .text-content {
+            font-size: 18px;
+        }
+
+        .icon-wrapper {
+            font-size: 18px;
+        }
+    }
+
     /* Hover 触发整体联动 */
     .card:hover .veil {
         opacity: 1;

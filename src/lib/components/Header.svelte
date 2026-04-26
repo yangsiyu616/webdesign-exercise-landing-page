@@ -42,4 +42,32 @@
         gap: var(--spacing-6);
         align-items: center;
     }
+
+    @media (max-width: 744px) {
+        .top-bar {
+            padding: var(--spacing-5) var(--spacing-6);
+        }
+
+        .link {
+            font-size: 20px;
+        }
+
+        .content-right {
+            gap: var(--spacing-4);
+        }
+    }
+
+    @media (max-width: 402px) {
+        .top-bar {
+            padding: var(--spacing-5) var(--spacing-4);
+        }
+
+        .link {
+            font-size: 18px;
+        }
+
+        .content-right {
+            gap: var(--spacing-3);
+        }
+    }
 </style>

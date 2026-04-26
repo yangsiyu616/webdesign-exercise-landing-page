@@ -153,4 +153,71 @@ import Project from "$lib/components/Project.svelte";
     .secondary {
         color: var(--color-content-secondary);
     }
+
+    @media (max-width: 744px) {
+        .header {
+            height: auto;
+            padding: var(--spacing-7) var(--spacing-5);
+        }
+
+        .hero-text {
+            font-size: var(--size-7); /* 40px on tablet per Figma */
+            width: 100%;
+        }
+
+        .desktop-tab-navigation {
+            height: auto;
+        }
+
+        .tab-navigation {
+            position: static;
+            width: 100%;
+            padding: 0 var(--spacing-5);
+            gap: var(--spacing-4);
+            flex-wrap: wrap;
+        }
+
+        .filter {
+            padding: var(--spacing-3) var(--spacing-4);
+        }
+
+        .filter-text {
+            font-size: 20px;
+        }
+
+        .card-grid {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-6);
+            padding: 0 var(--spacing-5);
+            justify-items: stretch;
+        }
+    }
+
+    @media (max-width: 402px) {
+        .header {
+            padding: var(--spacing-5) var(--spacing-4);
+        }
+
+        .hero-text {
+            font-size: 24px;
+        }
+
+        .tab-navigation {
+            padding: 0 var(--spacing-4);
+            gap: var(--spacing-3);
+        }
+
+        .filter {
+            padding: var(--spacing-2) var(--spacing-3);
+        }
+
+        .filter-text {
+            font-size: 18px;
+        }
+
+        .card-grid {
+            gap: var(--spacing-5);
+            padding: 0 var(--spacing-4);
+        }
+    }
 </style>
