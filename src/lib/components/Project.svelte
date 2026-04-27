@@ -26,7 +26,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--spacing-2);
-        width: 664px;
+        width: 100%;
     }
 
     .img-container {
