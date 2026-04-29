@@ -14,7 +14,7 @@
         <div class="link">
             <Link
             title="@1tt3r03d"
-            ref="/"
+            ref="https://www.instagram.com/1tt3r03d"
             />
         </div>
     </div>

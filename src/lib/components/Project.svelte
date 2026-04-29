@@ -55,6 +55,7 @@
         display: flex;
         justify-content: space-between; /* 关键：文字在左，图标在右 */
         align-items: center;
+          width: 100%;
     }
 
     .text-content {
@@ -80,7 +81,7 @@
     @media (max-width: 744px) {
         .card {
             display: flex;
-            width: min(664px, 100%);
+            width: min(100%, 100%);
             flex-direction: column;
             align-items: flex-start;
             gap: var(--spacing-2, 8px);
